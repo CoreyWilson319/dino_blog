@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Title from './Title'
+import Author from './Author'
+import Body from './Body'
+import Comments from './Comments'
+import Posts from './Posts'
 
-function App() {
+function App(props) {
+
+  // const comments = ["First", "Great Post", "Hire this author now!"]
+  // const displayComments = comments.map((eachComment, idx) => {
+  //   return <Comments comment={eachComment} />
+// })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Title title="Dinosaurs are awesome" />
+      <Author author="Stealthy Stegosaurus" />
+      <Body body="Check out this body property!" />
+      {displayComments} */}
+      <Posts title={post.title} author={post.author} body={post.body} comments={post.comments[0]}/>
     </div>
   );
 }
